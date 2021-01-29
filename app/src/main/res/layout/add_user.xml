@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".ui.RegisterUser"
+    tools:context=".entites.RegisterUser"
     android:background="#10A2E0"
    android:textAlignment="gravity" >
 
