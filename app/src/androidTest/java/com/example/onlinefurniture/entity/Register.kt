@@ -31,20 +31,19 @@ class RegisterActivity : AppCompatActivity() {
             btnAddUser = findViewById(R.id.btnAddUser)
 
             btnAddUser.setOnClickListener {
-                val fname = Fname.text.toString()
-                val lname = Lname.text.toString()
-                val username = Username.text.toString()
-                val password = Password.text.toString()
-                val confirmPassword = ConfirmPassword.text.toString()
+                val FNAME = Fname.text.toString()
+                val LNAME = Lname.text.toString()
+                val USERNAME = Username.text.toString()
+                val PASSWORD = Password.text.toString()
+                val CONFIRMPASSWORD = ConfirmPassword.text.toString()
 
-                if (password != confirmPassword) {
+                if (PASSWORD != CONFIRMPASSWORD) {
                     Password.error = "Password does not match"
                     Password.requestFocus()
                     return@setOnClickListener
                 } else {
-                    val user = User (fname,lname,username.)
                     // code goes here
-                    val user = User(fname, lname, username, password)
+                    val user = User(FNAME, LNAME, USERNAME, PASSWORD)
                     CoroutineScope(Dispatchers.IO).launch {
                         StudentDB
                             .getInstance(this@RegisterActivity)
