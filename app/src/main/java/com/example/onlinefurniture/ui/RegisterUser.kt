@@ -25,7 +25,14 @@ class RegisterUser:AppCompatActivity() {
   Confirmpassword = findViewById(R.id.ConfirmPassword)
   btnAddUser = findViewById(R.id.btnAddUser)
 
+  btnAddUser.setOnClickListener {
+   val fname = Fname.text.toString()
+   val lname = Lname.text.toString()
+   val username = Username.text.toString()
+   val password = Password.text.toString()
+   val confirmpassword = Confirmpassword.text.toString()
 
+  }
 
  }
 }
