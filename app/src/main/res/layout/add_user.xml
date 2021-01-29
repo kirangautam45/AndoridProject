@@ -4,43 +4,60 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    tools:context=".ui.RegisterUser">
+    tools:context=".ui.RegisterUser"
+    android:background="#10A2E0"
+   android:textAlignment="gravity" >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="0.5in"
+        android:scaleType="fitXY"
+        android:src="@drawable/login" />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Fname"
+        android:hint="First"
         android:layout_margin="10dp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Lname"
+        android:hint="Last"
         android:layout_margin="10dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Username"
+        android:hint="User"
         android:layout_margin="10dp"
         />
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/Password"
+        android:hint="Password"
         android:inputType="textPassword"
         android:layout_margin="10dp"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Confirm Password"
         android:id="@+id/ConfirmPassword"
         android:inputType="textPassword"
         android:layout_margin="10dp"
         />
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/btnAddUser"
+        android:text="Sign up"
         android:layout_margin="10dp"
+        android:textColor="#17BD5F"
         />
-    
+
 </LinearLayout>
