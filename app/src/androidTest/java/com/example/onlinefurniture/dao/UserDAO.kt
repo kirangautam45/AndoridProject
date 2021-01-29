@@ -4,7 +4,7 @@ import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Update
-import com.example.onlinefurniture.entity.User
+
 @Dao
 interface UserDAO {
     @Insert
@@ -17,7 +17,7 @@ interface UserDAO {
 
 annotation class update
 
-class User {
+class User(fname: String, lname: String, username: String, password: String) {
 
 }
 
