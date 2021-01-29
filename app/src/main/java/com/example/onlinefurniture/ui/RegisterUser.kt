@@ -25,25 +25,13 @@ class RegisterUser:AppCompatActivity() {
   Confirmpassword = findViewById(R.id.ConfirmPassword)
    btnAddUser=findViewById(R.id.btnAddUser)
 
-  btnAddUser.setOnClickListener{
-   val fname=Fname.text.toString()
-   val lname=Lname.text.toString()
-   val username=Username.text.toString()
-   val password=Password.text.toString()
-   val confirmpassword=Confirmpassword.text.toString()
+  btnAddUser.setOnClickListener {
+   val fname = Fname.text.toString()
+   val lname = Lname.text.toString()
+   val username = Username.text.toString()
+   val password = Password.text.toString()
+   val confirmpassword = Confirmpassword.text.toString()
 
-   if(password!= confirmpassword){
-    Password.error="password does not match "
-    Password.requestFocus()
-    return@setOnClickListener
-   } else {
-    val user = User(fname, lname, username, password)
-    CoroutineScope(Dispatchers.IO).launch {
-     //StudentDB(this@RegisterUserActivity).getUserDAO().registerUser(user)
-     userDB.getInstance(this@RegisterUser).getUserDAO().registerUser(user)
-    }
-    Toast.makeText(this, "User registered", Toast.LENGTH_SHORT).show()
-   }
   }
 
    }
